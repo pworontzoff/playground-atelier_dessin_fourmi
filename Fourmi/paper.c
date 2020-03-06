@@ -131,7 +131,11 @@ void _create_table(struct spaper work) {
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d)}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",(pCur->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(255,0,0)}",(pCur->numStep/(float)work.nbSteps)*100);
+                        fputs(buffer,work.fp);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(255,0,0)}",(((pCur->numStep+1)/(float)work.nbSteps)*100)-0.001);
+                        fputs(buffer,work.fp);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",((pCur->numStep+1)/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
 		    } else {
 			// précent et actuel coloriés
