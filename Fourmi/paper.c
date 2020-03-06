@@ -115,8 +115,7 @@ void _create_table(struct spaper work) {
                         //sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
                         sprintf(buffer,"\n%.3f% {background-color: rgba(255,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
-                        //sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(255,0,0);}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d);}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
                         fputs(buffer,work.fp);
@@ -128,8 +127,7 @@ void _create_table(struct spaper work) {
                         //sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         sprintf(buffer,"\n%.3f% {background-color: rgb(255,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
-                        //sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(255,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pCur->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
