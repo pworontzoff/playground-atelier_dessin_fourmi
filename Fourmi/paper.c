@@ -83,7 +83,7 @@ void _init_paper(struct spaper *paper, int nbl, int nbc, int size, float d, int 
 
 void _create_table(struct spaper work) {
     int i,j,cpt=0;
-    char buffer[500]={0};
+    char buffer[500]={0}, ant='◼';
     struct colorize_element *pCur, *pPrec;
 
     fputs("<style>",work.fp);
@@ -93,6 +93,8 @@ void _create_table(struct spaper work) {
         for (j=0;j<work.nbc;j++) {
 	    pCur = work.table+i*work.nbc+j;
 	    sprintf(buffer,"\ntd#cell_%d_%d {animation: colorize_%d_%d %fs}",i,j,i,j,work.nbSteps*work.anim_duration);
+            fputs(buffer,work.fp);
+	    sprintf(buffer,"\ntd#cell_%d_%d::after {animation: colorize_%d_%d %fs}",i,j,i,j,work.nbSteps*work.anim_duration);
             fputs(buffer,work.fp);
 	    sprintf(buffer,"\n@keyframes colorize_%d_%d {",i,j);
             fputs(buffer,work.fp);
@@ -104,38 +106,38 @@ void _create_table(struct spaper work) {
 		    // précent transparent
 		    if (pCur->current_color.red==-1 && pCur->current_color.green==-1 && pCur->current_color.blue==-1) {
 			// précent et actuel transparents
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",(pPrec->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0); content: none;}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0); content: none;}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgba(0,0,0,0)}",(pCur->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgba(0,0,0,0); content: none;}",(pCur->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
 		    } else {
 			// précent transparent et actuel colorié
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",(pPrec->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0); content: none;}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0)}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
+                        sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0); content: none;}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d)}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue, ant);
                         fputs(buffer,work.fp);
 		    }
 		} else {
 		    // précent colorié
 		    if (pCur->current_color.red==-1 && pCur->current_color.green==-1 && pCur->current_color.blue==-1) {
 			// précent colorié et actuel transparent
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d)}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue, ant);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d)}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue, ant);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgba(0,0,0,0)}",(pCur->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgba(0,0,0,0); content: none;}",(pCur->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
 		    } else {
 			// précent et actuel coloriés
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d)}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue, ant);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d)}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue, ant);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d)}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); font-size: 50px; content: \"%c\";}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue, ant);
                         fputs(buffer,work.fp);
 		    }
 		}
@@ -143,7 +145,7 @@ void _create_table(struct spaper work) {
 	    fputs("\n}",work.fp);
 	}
     }
-
+/*
     //ajout de la fourmi
     for (i=0;i<work.nbl;i++) {
         for (j=0;j<work.nbc;j++) {
@@ -199,7 +201,7 @@ void _create_table(struct spaper work) {
 	    fputs("\n}",work.fp);
 	}
     }
-
+*/
     fputs("\n</style>",work.fp);
 
     // create final table with ids at each cell : cell_'i'_'j'
