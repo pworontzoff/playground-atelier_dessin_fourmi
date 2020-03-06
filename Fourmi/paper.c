@@ -116,26 +116,26 @@ void _create_table(struct spaper work) {
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0); background-image: none;}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png'));}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
                         fputs(buffer,work.fp);
 		    }
 		} else {
 		    // précent colorié
 		    if (pCur->current_color.red==-1 && pCur->current_color.green==-1 && pCur->current_color.blue==-1) {
 			// précent colorié et actuel transparent
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png');}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png');}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f\% {background-color: rgba(0,0,0,0); background-image: none;}",(pCur->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
 		    } else {
 			// précent et actuel coloriés
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png');}",(pPrec->numStep/(float)work.nbSteps)*100, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png');}",((pCur->numStep/(float)work.nbSteps)*100)-0.001, pPrec->current_color.red, pPrec->current_color.green, pPrec->current_color.blue);
                         fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(ant.png);}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
+                        sprintf(buffer,"\n%.3f\% {background-color: rgb(%d,%d,%d); background-repeat:no-repeat; background-size:contain;  background-image(url('ant.png');}",(pCur->numStep/(float)work.nbSteps)*100, pCur->current_color.red, pCur->current_color.green, pCur->current_color.blue);
                         fputs(buffer,work.fp);
 		    }
 		}
