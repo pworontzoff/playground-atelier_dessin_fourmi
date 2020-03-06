@@ -1,0 +1,14 @@
+title : Exercices Papers animés - La fourmi de Langton - Solutions
+
+# Table of contents
+plan:
+  - title: La fourmi de Langton # Set the page title
+    statement: markdowns/welcome.md # Set the file path to the page content
+
+# Settings for your programming projects and the associated Docker images
+projects:
+  fourmi:
+    root: "/Fourmi"
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
