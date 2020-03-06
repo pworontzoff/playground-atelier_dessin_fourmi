@@ -199,29 +199,6 @@ void _create_table(struct spaper work) {
 	    fputs("\n}",work.fp);
 	}
     }
-	
-            fputs(buffer,work.fp);
-
-	    while (pCur->pNext != NULL) { // nb pCur->pNext == NULL de suite : cas d'une case jamais coloriée, pas d'animation
-                pPrec = pCur;
-                pCur = pCur->pNext;
-		if (pPrec->current_color.red==-1 && pPrec->current_color.green==-1 && pPrec->current_color.blue==-1) {
-		    // précent transparent
-		    if (!(pCur->current_color.red==-1 && pCur->current_color.green==-1 && pCur->current_color.blue==-1)) {
-			// précent transparent et actuel colorié
-                        fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f% {content: none;}",((pCur->numStep/(float)work.nbSteps)*100)-0.001);
-                        fputs(buffer,work.fp);
-                        sprintf(buffer,"\n%.3f\% {font-size: 50px; content: \"◼\"; }");
-                        fputs(buffer,work.fp);
-		    }
-		}
-            }
-	    fputs("\n}",work.fp);
-	}
-    }
-
-
 
     fputs("\n</style>",work.fp);
 
