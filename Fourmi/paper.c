@@ -113,7 +113,7 @@ void _create_table(struct spaper work) {
 		    } else {
 			// précent transparent et actuel colorié
                         //sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
-                        sprintf(buffer,"\n%.3f% {background-color: rgba(255,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
+                        sprintf(buffer,"\n%.3f% {background-color: rgb(255,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
                         sprintf(buffer,"\n%.3f% {background-color: rgba(0,0,0,0);}",(pPrec->numStep/(float)work.nbSteps)*100);
                         fputs(buffer,work.fp);
