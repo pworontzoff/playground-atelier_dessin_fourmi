@@ -148,7 +148,7 @@ void _create_table(struct spaper work) {
     for (i=0;i<work.nbl;i++) {
         for (j=0;j<work.nbc;j++) {
 	    pCur = work.table+i*work.nbc+j;
-	    sprintf(buffer,"\ntd::after#cell_%d_%d {animation: ant_%d_%d %fs}",i,j,i,j,work.nbSteps*work.anim_duration);
+	    sprintf(buffer,"\ntd#cell_%d_%d::after {animation: ant_%d_%d %fs}",i,j,i,j,work.nbSteps*work.anim_duration);
             fputs(buffer,work.fp);
 	    sprintf(buffer,"\n@keyframes ant_%d_%d {",i,j);
             fputs(buffer,work.fp);
