@@ -1,13 +1,17 @@
 # La fourmi de langton - étape 1 : la grille !
 
+## Les explications et les consignes
+
 Nous allons construire la grille avec une taille de 7 x 7.
 
-Pour ce faire, nous pourrons utiliser une instruction qui permet de créer et paramétrer une grille :
+Pour ce faire, nous pourrons utiliser deux instructions qui permettent de créer et d'afficher une grille.
+
+1. Pour créer la grille nous pouvons utiliser l'instruction `init_paper()` :
 
 ```C
 init_paper(nb_lignes, nb_colonnes, taille, delai_anim, ctrl_les_pas); 
 ```
-est une instruction qui permet de créer une grille.
+est une instruction qui permet de créer et paramétrer une grille.
 
 - `nb_lignes` est un premier *paramètre*, c'est un nombre entier qui donne le nombre de lignes de la grille
 - `nb_colonnes` est un deuxième paramètre (nombre entier) qui donne le nombre de colonnes de la grille 
@@ -19,6 +23,17 @@ est une instruction qui permet de créer une grille.
 
 **! Nous devons écrire cette instruction au bon endroit dans notre programme : à la ligne 16.**
 
-Le programme C :
+2. Pour afficher la grille nous pouvons utiliser l'instruction
+
+```C
+display_paper()
+```
+
+qui permet d'afficher la grille !
+
+**! L'ordre des instruction à de l'importance : afficher la grille avant de la créer ne fonctionnera pas.**
+
+
+## Le programme C (à vous les commandes !)
 
 @[fourmi1]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi1"})
