@@ -21,4 +21,4 @@ est une instruction qui permet de créer une grille.
 
 Le programme C :
 
-@[fourmi]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi"})
+@[fourmi]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi1"})
