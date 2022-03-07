@@ -15,6 +15,10 @@ est une instruction qui permet de créer une grille.
 -  `delai_anim` est le temps de pause (en secondes) entre chaque coloriages ou effacements de cases. Ceci permet de contrôler la vitesse de l'animation. Ce délai peut-être un nombre décimal, par exemple 0.05 pour 5 centièmes de seconde.
 -  Nous ne nous préoccuperons pas du paramètre `ctrl_les_pas`, il devra être mis à 0.
 
+**! Nous devons écrire les bonnes valeurs de paramètres pour obtenir une grille de 7 x 7 avec des cases de 25 pixels de côtés et il faudra qu'une étape dure 0.5s.**
+
+**! Nous devons écrire cette instruction au bon endroit dans notre programme : à la ligne ...**
+
 Le programme C :
 
 @[fourmi]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi"})
