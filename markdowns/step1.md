@@ -5,7 +5,7 @@ Nous allons construire la grille avec une taille de 7 x 7.
 Pour ce faire, nous pourrons utiliser une instruction qui permet de créer et paramétrer une grille :
 
 ```C
-init_paper(*nb_lignes*,`nb_colonnes`,`taille`,`delai_anim`,`ctrl_les_pas`); 
+init_paper(nb_lignes,nb_colonnes,taille,delai_anim,ctrl_les_pas); 
 ```
 est une instruction qui permet de créer une grille.
 
