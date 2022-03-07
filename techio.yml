@@ -9,8 +9,8 @@ plan:
 
 # Settings for your programming projects and the associated Docker images
 projects:
-  fourmi:
-    root: "/Fourmi"
+  fourmi1:
+    root: "/Fourmi1"
     runner:
       name: techio/cmake-gcc-runner
       version: latest
