@@ -1,13 +1,10 @@
 title : La fourmi de Langton
-
-# Table of contents
 plan:
   - title: La fourmi de Langton 
     statement: markdowns/welcome.md
   - title: La fourmi de Langton - étape 1 : la grille
     statement: markdowns/step1.md
 
-# Settings for your programming projects and the associated Docker images
 projects:
   fourmi1:
     root: "/Fourmi1"
