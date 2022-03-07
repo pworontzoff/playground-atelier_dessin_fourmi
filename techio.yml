@@ -2,7 +2,7 @@ title : La fourmi de Langton
 plan:
   - title: La fourmi de Langton 
     statement: markdowns/welcome.md
-  - title: La fourmi de Langton - étape 1 : la grille
+  - title: La fourmi de Langton - étape 1 &colon;&nbsp;la grille
     statement: markdowns/step1.md
 
 projects:
