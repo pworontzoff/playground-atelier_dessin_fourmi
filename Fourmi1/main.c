@@ -12,9 +12,8 @@ int ant_looks = right; // (up is 1 / right is 2 / down is 3 / left is 4)
 void ant_turns_left_then_move();
 void ant_turns_right_then_move();
 
-int main()
-{
-
+int main() {
+    
 }
 
 void ant_turns_right_then_move() {
