@@ -11,3 +11,8 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest
+  fourmi:
+    root: "/Fourmi"
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
