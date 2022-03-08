@@ -49,13 +49,13 @@ int main()
         colorize();
     } loop;
 
-    repeat(4) {
+    repeat(5) {
         move_up();
         move_left();
         colorize();
     } loop;
 
-    repeat(3) {
+    repeat(2) {
         move_up();
         colorize();
     } loop;
