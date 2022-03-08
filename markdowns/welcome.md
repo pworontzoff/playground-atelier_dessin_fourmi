@@ -32,7 +32,7 @@ Après tout, les règles de base sont simples :
 
 Pour parvenir à nos fins, nous utiliserons le concept des "Papers". Un "Paper" est une grille dans laquelle on peut dessiner en coloriant des cases.
 
-Voici un exemple de programme (codé en langage C) qui permet de créer et afficher un paper dans lequel on a dessiné un coeur avec des carrés (une sorte de "pixel art" informatique) :
+Voici un exemple de programme (codé en langage C) qui permet de créer et afficher un paper de 13x13 dans lequel on a dessiné un coeur avec des carrés (une sorte de "pixel art" informatique) :
 
 **! Vous pouvez appuyer sur "Run" pour exécuter ce code et visualiser le "Paper" obtenu. Inutile de comprendre le programme maintenant, nous allons y venir progressivement par la suite.**
 
