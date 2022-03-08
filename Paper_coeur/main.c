@@ -28,16 +28,16 @@ int main()
         move_right();
         colorize();
     } loop;
-    
+
+    move_right();
+    colorize();
+
     repeat(3) {
         move_down();
         move_right();
         colorize();
     } loop;
-    
-    move_right();
-    colorize();
-
+        
     repeat(2) {
         move_down();
         colorize();
