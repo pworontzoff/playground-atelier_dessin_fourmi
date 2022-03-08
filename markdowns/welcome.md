@@ -14,6 +14,11 @@ https://www.youtube.com/watch?v=qZRYGxF6D3w
 
 ([Dropbox mp4](https://www.dropbox.com/s/64kqxl76el77i7p/La%20fourmi%20de%20Langton%20-%20Science%20%C3%A9tonnante%20%2321.mp4?dl=0))
 
+Nous venons de voir tout ce champ d'exploration ouvert par cet intriguant petit programme de simulation d'une fourmi de Chris Langton.
+
+Ne pourrions-nous pas aborder la programmation avec pour défi de reprogrammer cet algorithme ?
+
+Après tout, les règles de base sont simples : si la case e
 
 Définissons le concept de "Paper". Il s'agit d'une grille dans laquelle on peut dessiner en coloriant des cases.
 
