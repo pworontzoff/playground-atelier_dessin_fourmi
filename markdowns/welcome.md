@@ -30,7 +30,7 @@ Après tout, les règles de base sont simples :
 
 ## Les Papers
 
-Définissons le concept de "Paper". Il s'agit d'une grille dans laquelle on peut dessiner en coloriant des cases.
+Pour parvenir à nos fins, nous utiliserons le concpet des "Papers". Un "Paper" est une grille dans laquelle on peut dessiner en coloriant des cases.
 
 Voici un exemple de programme (codé en langage C) qui permet de créer et afficher un paper dans lequel on a dessiné un coeur avec des carrés (une sorte de "pixel art" informatique) :
 
