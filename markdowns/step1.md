@@ -6,7 +6,7 @@ Nous allons construire la grille avec une taille de 7 x 7.
 
 Pour ce faire, nous pourrons utiliser deux instructions qui permettent de créer et d'afficher une grille.
 
-1] Pour créer la grille nous pouvons utiliser l'instruction `init_paper()` :
+**1** Pour créer la grille nous pouvons utiliser l'instruction `init_paper()` :
 
 ```C
 init_paper(nb_lignes, nb_colonnes, taille, delai_anim, ctrl_les_pas); 
@@ -23,7 +23,7 @@ est une instruction qui permet de créer et paramétrer une grille.
 
 **! Nous devons écrire cette instruction au bon endroit dans notre programme : à la ligne 16.**
 
-2] Pour afficher la grille nous pouvons utiliser l'instruction
+**2** Pour afficher la grille nous pouvons utiliser l'instruction
 
 ```C
 display_paper()
