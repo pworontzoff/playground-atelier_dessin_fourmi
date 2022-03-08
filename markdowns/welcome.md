@@ -18,7 +18,9 @@ Nous venons de voir tout ce champ d'exploration ouvert par cet intriguant petit 
 
 Ne pourrions-nous pas aborder la programmation avec pour défi de reprogrammer cet algorithme ?
 
-Après tout, les règles de base sont simples : si la case e
+Après tout, les règles de base sont simples :
+- si la case sous la fourmi n'est pas coloriée, elle colorie cette case, puis elle tourne d'1/4 de tour à droite, puis elle avance d'une case ;
+- si la case sous la fourmi est coloriée, elle efface la couleur de cette case, puis elle tourne d'1/4 de tour à gauche, puis elle avance d'une case.
 
 Définissons le concept de "Paper". Il s'agit d'une grille dans laquelle on peut dessiner en coloriant des cases.
 
