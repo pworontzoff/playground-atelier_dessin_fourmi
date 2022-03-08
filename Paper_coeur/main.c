@@ -29,21 +29,20 @@ int main()
         colorize();
     } loop;
     
-    repeat(2) {
+    repeat(3) {
+        move_down();
         move_right();
         colorize();
     } loop;
-    
-    move_right();
-    
-    repeat(3) {
+
+    repeat(2) {
         move_down();
         colorize();
     } loop;
 
     repeat(5) {
         move_down();
-        move_right();
+        move_left();
         colorize();
     } loop;
 
