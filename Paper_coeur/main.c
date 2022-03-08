@@ -34,6 +34,9 @@ int main()
         move_right();
         colorize();
     } loop;
+    
+    move_right();
+    colorize();
 
     repeat(2) {
         move_down();
