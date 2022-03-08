@@ -32,7 +32,7 @@ int main()
     move_right();
     colorize();
 
-    repeat(3) {
+    repeat(2) {
         move_down();
         move_right();
         colorize();
