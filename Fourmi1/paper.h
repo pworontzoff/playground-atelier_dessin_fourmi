@@ -7,6 +7,15 @@
 #define repeat(n) _pile_repeat++;for(_cpt_repeat[_pile_repeat]=0;_cpt_repeat[_pile_repeat]<n;_cpt_repeat[_pile_repeat]++)
 #define loop _pile_repeat--
 
+/********* POUR DEVOXX deplacement fourmi *********/
+#define up    1
+#define right 2
+#define down  3
+#define left  4
+
+int ant_looks = right; // (up is 1 / right is 2 / down is 3 / left is 4)
+/********* POUR DEVOXX deplacement fourmi *********/
+
 int _cpt_repeat[100];
 int _pile_repeat;
 
@@ -67,5 +76,11 @@ void step_display();
 void change_color(short, short, short);
 int is_colored();
 struct RGB get_color();
+
+/********* POUR DEVOXX deplacement fourmi *********/
+void ant_turns_left_then_move();
+void ant_turns_right_then_move();
+/********* POUR DEVOXX deplacement fourmi *********/
+
 
 #endif // PAPER_H_INCLUDED
