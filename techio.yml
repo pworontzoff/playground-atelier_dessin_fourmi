@@ -11,6 +11,11 @@ projects:
     runner:
       name: techio/cmake-gcc-runner
       version: latest
+  paper_coeur_anim:
+    root: "/Paper_coeur_anim"
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
   fourmi1:
     root: "/Fourmi1"
     runner:
