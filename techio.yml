@@ -6,6 +6,11 @@ plan:
     statement: markdowns/step1.md
 
 projects:
+  paper_coeur:
+    root: "/Paper_coeur"
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
   fourmi1:
     root: "/Fourmi1"
     runner:
