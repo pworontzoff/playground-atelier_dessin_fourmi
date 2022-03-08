@@ -26,6 +26,8 @@ Après tout, les règles de base sont simples :
 ![fourmiCasePleine1](img/fourmiCasePleine1.PNG)
 ![fourmiCasePleine2](img/fourmiCasePleine2.PNG)
 
+## Les Papers
+
 Définissons le concept de "Paper". Il s'agit d'une grille dans laquelle on peut dessiner en coloriant des cases.
 
 Voici un exemple de programme (codé en langage C) qui permet de créer et afficher un paper dans lequel on a dessiné un coeur avec des carrés (une sorte de "pixel art" informatique) :
@@ -34,8 +36,10 @@ Voici un exemple de programme (codé en langage C) qui permet de créer et affic
 
 @[paper_coeur]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "paper_coeur"})
 
-Une vidéo sur le sujet : 
+## Les Papers animés
 
 Le programme C :
 
 @[fourmi]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi"})
+
+
