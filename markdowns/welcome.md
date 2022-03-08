@@ -45,3 +45,7 @@ Comme leur nom l'indique, ils permettent une version "animée" des papers dans l
 Voici un programme qui dessine progressivement le coeur :
 
 @[paper_coeur_anim]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "paper_coeur_anim"})
+
+Et donc, les plus perspicaces auront noté qu'on peut se servir des Papers animés pour programmer une petite fourmi de Langton.
+
+C'est ce que nous allons faire pas à pas dans les prochaines pages !
