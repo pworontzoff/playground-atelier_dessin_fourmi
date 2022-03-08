@@ -2,7 +2,7 @@
 
 ## Les explications et les consignes
 
-Nous allons construire la grille avec une taille de 7 x 7.
+Nous commençons par construire la grille avec une taille de 7 x 7.
 
 Pour ce faire, nous pourrons utiliser deux instructions qui permettent de créer et d'afficher une grille.
 
