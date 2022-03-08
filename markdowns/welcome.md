@@ -1,4 +1,6 @@
-# Explications : la fourmi de langton et les Papers animés
+# Explications : la fourmi de Langton et les Papers animés
+
+## La fourmi de Chris Langton
 
 Bienvenue à tous dans cette petite séance de découverte de la programmation !
 
