@@ -4,7 +4,7 @@
 
 int main()
 {
-    init_paper(15,15,25,0,0);
+    init_paper(13,13,25,0,0);
 
     move_to(3,2);
     
