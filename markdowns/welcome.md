@@ -8,7 +8,7 @@ Pas de paniques si vous n'avez rien compris, c'est normal, à la fin de la séan
 
 Pour commencer, nous allons regarder une vidéo (+- 15 minutes) sur le sujet de la fourmi de Langton. Soyez bien attentifs ;-)
 
-https://youtu.be/qZRYGxF6D3w?t=247 / https://www.dropbox.com/s/56z2ujebbg5u8yu/La%20fourmi%20de%20Langton%20-%20Science%20%C3%A9tonnante%20%2321.mov?dl=0 / https://www.dropbox.com/s/64kqxl76el77i7p/La%20fourmi%20de%20Langton%20-%20Science%20%C3%A9tonnante%20%2321.mp4?dl=0
+https://youtu.be/qZRYGxF6D3w / https://www.dropbox.com/s/56z2ujebbg5u8yu/La%20fourmi%20de%20Langton%20-%20Science%20%C3%A9tonnante%20%2321.mov?dl=0 / https://www.dropbox.com/s/64kqxl76el77i7p/La%20fourmi%20de%20Langton%20-%20Science%20%C3%A9tonnante%20%2321.mp4?dl=0
 
 
 
