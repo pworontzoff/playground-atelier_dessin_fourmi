@@ -8,7 +8,7 @@ Nous allons utiliser le concept de "Papers animés" pour programmer (en partie) 
 
 Pas de panique si vous n'avez rien compris, c'est normal, à la fin de la séance, tout sera plus clair et surtout, vous aurez appris certains concepts clés qui font partie des socles de bases de la programmation.
 
-Pour commencer, nous allons regarder une vidéo (+- 15 minutes) sur le sujet de la fourmi de Langton. Soyez bien attentifs ;-)
+Pour commencer, nous allons regarder une vidéo (+- 8 minutes) sur le sujet de la fourmi de Langton. Soyez bien attentifs ;-)
 
 https://www.youtube.com/watch?v=qZRYGxF6D3w
 
