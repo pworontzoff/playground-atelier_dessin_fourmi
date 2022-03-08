@@ -23,6 +23,24 @@ int main()
     move_down();
     move_right();
     colorize();
+    repeat(4) {
+        move_down();
+        colorize();
+    } loop;
+    repeat(3) {
+        move_down();
+        move_left();
+        colorize();
+    } loop;
+    repeat(2) {
+        move_up();
+        move_left();
+        colorize();
+    } loop;
+    repeat(4) {
+        move_up();
+        colorize();
+    } loop;
     display_paper();
     return 0;
 }
