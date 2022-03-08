@@ -5,42 +5,59 @@
 int main()
 {
     init_paper(15,15,25,0,0);
-    move_to(3,3);
+
+    move_to(3,2);
+    
     colorize();
+    
     move_up();
-    move_right();
-    colorize();
+    
+    repeat(2) {
+        move_right();
+        colorize();
+    } loop;
+    
     repeat(2) {
         move_down();
         move_right();
         colorize();
     } loop;
+    
     repeat(2) {
         move_up();
         move_right();
         colorize();
     } loop;
-    move_down();
+    
+    repeat(2) {
+        move_right();
+        colorize();
+    } loop;
+    
     move_right();
-    colorize();
-    repeat(4) {
+    
+    repeat(3) {
         move_down();
         colorize();
     } loop;
-    repeat(3) {
+
+    repeat(5) {
         move_down();
-        move_left();
+        move_right();
         colorize();
     } loop;
-    repeat(3) {
+
+    repeat(5) {
         move_up();
         move_left();
         colorize();
     } loop;
-    repeat(4) {
+
+    repeat(3) {
         move_up();
         colorize();
     } loop;
+
     display_paper();
     return 0;
 }
