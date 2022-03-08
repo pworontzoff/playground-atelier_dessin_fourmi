@@ -49,3 +49,5 @@ Voici un programme qui dessine progressivement le coeur :
 Et donc, les plus perspicaces auront noté qu'on peut se servir des Papers animés pour programmer une petite fourmi de Langton.
 
 C'est ce que nous allons faire pas à pas dans les prochaines pages !
+
+Prêt pour l'aventure ? Alors, cliquez sur "Next", ci-dessous !
