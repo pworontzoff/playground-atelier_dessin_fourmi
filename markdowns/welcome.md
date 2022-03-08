@@ -12,7 +12,7 @@ Voici un exemple de programme (codé en langage C) qui permet de créer et affic
 
 ! Vous pouvez appuyer sur "Run" pour exécuter ce code et visualiser le "Paper" obtenu. Inutile de comprendre le programme maintenant, nous allons y venir progressivement par la suite !
 
-@[paper_coeur]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "paper_coeur"})
+@[paper_coeur]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "Paper coeur"})
 
 Une vidéo sur le sujet : https://youtu.be/qZRYGxF6D3w?t=247 
 
