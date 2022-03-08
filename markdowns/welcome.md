@@ -40,8 +40,8 @@ Voici un exemple de programme (codé en langage C) qui permet de créer et affic
 
 ## Les Papers animés
 
-Le programme C :
+Comme leur nom l'indique, ils permettent une version "animée" des papers dans lesquels on peut voir progressivement la figure se construire.
 
-@[fourmi]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "fourmi"})
+Voici un programme qui dessine progressivement le coeur :
 
-
+@[paper_coeur_anim]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "paper_coeur_anim"})
