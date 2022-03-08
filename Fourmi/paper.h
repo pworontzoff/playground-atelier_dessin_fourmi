@@ -13,7 +13,7 @@
 #define down  3
 #define left  4
 
-int ant_looks = right; // (up is 1 / right is 2 / down is 3 / left is 4)
+int ant_looks; // (up is 1 / right is 2 / down is 3 / left is 4)
 /********* POUR DEVOXX deplacement fourmi *********/
 
 int _cpt_repeat[100];
