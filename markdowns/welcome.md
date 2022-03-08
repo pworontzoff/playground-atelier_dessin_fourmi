@@ -10,7 +10,7 @@ Tout d'abord, définissons le concpet de "Paper". Il s'agit d'une grille dans la
 
 Voici un exemple de programme (codé en langage C) qui permet de créer et afficher un paper dans lequel on a dessiné un coeur avec des carrés (une sorte de "pixel art" informatique) :
 
-! Vous pouvez appuyer sur "Run" pour exécuter ce code et visualiser le "Paper" obtenu. Inutile de comprendre le programme maintenant, nous allons y venir progressivement par la suite !
+**! Vous pouvez appuyer sur "Run" pour exécuter ce code et visualiser le "Paper" obtenu. Inutile de comprendre le programme maintenant, nous allons y venir progressivement par la suite.**
 
 @[paper_coeur]({"stubs": ["main.c"],"command": "sh /project/target/run.sh", "project" : "paper_coeur"})
 
