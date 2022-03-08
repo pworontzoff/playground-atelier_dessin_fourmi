@@ -20,7 +20,11 @@ Ne pourrions-nous pas aborder la programmation avec pour défi de reprogrammer c
 
 Après tout, les règles de base sont simples :
 - si la case sous la fourmi n'est pas coloriée, elle colorie cette case, puis elle part à droite (en avançant d'une seule case) ;
+![fourmiCaseVide1](img/fourmiCaseVide1.png)
+![fourmiCaseVide2](img/fourmiCaseVide2.png)
 - si la case sous la fourmi est coloriée, elle efface la couleur de cette case, puis elle part à gauche (en avançant d'une seule case).
+![fourmiCasePleine1](img/fourmiCasePleine1.png)
+![fourmiCasePleine2](img/fourmiCasePleine2.png)
 
 Définissons le concept de "Paper". Il s'agit d'une grille dans laquelle on peut dessiner en coloriant des cases.
 
