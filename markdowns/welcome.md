@@ -1,4 +1,4 @@
-# La fourmi de langton
+# La fourmi de langton et les Papers animés
 
 Bienvenue à tous dans cette petite séance de découverte de la programmation !
 
